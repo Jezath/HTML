@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Etiqueta HEAD: Metadatos, archivos que se cargarán como los css, ayuda a dar más información de la página -->
+  <meta charset="UTF-8"> <!-- codificación para carácteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ayuda adaptar la página a dispositivos móviles -->
+  <meta name="robots" content="index, follow"> <!-- ayuda a la búsqueda de google -->
+  <meta name="description" content="Página demostrativa del uso de las diferentes etiquetas de HTML"> <!-- descripción de la página, sale en las búsqueda de google -->
+  <title>Html</title>
+  <meta name="theme-color" content="#09f"> <!-- cambia el color de la barra del navegador -->
+  <link rel="icon" type="image/jpg" href="./moon.jpg"> <!-- pone un ícono en la pestaña del navegador -->
+
+
+  <!-- Open Graph: etiquetas CEO que ayudan a dar información de la página cuando es insertada en otra web -->
+  <meta property="og:title" content="si no lo ponemos toma el título de arriba">
+  <meta property="og:description" content="si no lo ponemos toma la descripción de arriba">
+  <meta property="og:image" content="ruta local de la imagen">
+  <meta property="og:image:alt" content="descripción de la imagen">
+
+  <link rel="alternate" href="ruta local del web en otro idioma" hreflang="en-GB"> <!-- direcciona a la página traducida a otro idioma -->
+  <link rel="canonical" href="rutal local del nuestra página principal">
+</head>
+
+<body>
+
+  <header>
+    <h1>HTML</h1>
+    <h2>Estructura de las etiquetas</h2>
+    <img 
+    loading="lazy"
+    src="./img/estructura html.webp" alt="description" 
+    width="400"
+    >
+
+    <nav>
+      <a href="#" id="header">Header</a>
+      <a href="#main">Main</a> 
+      <!-- 
+        #:permite la navegación interna 
+        main: es el id del elemento donde queremos ir 
+      -->
+      <a href="#footer">Footer</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1.- Etiquetas de texto -->
+    <!-- <p> <h1... h6> <strong> <em> <u> -->
+    <section>
+      <h2>1.- Texto</h2>
+      <p>Para escribir títulos podemos usar las etiquetas: <strong>h1... h6</strong></p>
+
+      <p>Etiqueta <strong>p</strong> se usa para los párrafos.</p>
+
+      <p>Con la etiqueta strong podemos <strong>resaltar carácteres</strong>.</p>
+      <p>Para abrir la ternimal en VSC:<strong> ctrl + ñ</strong></p>
+
+      <p>Este texto, inicialmente no resaltado, <mark>ahora resaltado</mark> con la etiqueta mark.</p> 
+
+      <p>Etiquetas de cursiva, negrita, subrayado:</p>
+      <ul>
+        <li> <strong>negrita con la etiqueta strong</strong> </li>
+        <li> <em>cursiva con la etiqueta em</em> </li>
+        <li> <u>subrayado con la etiqueta u</u> </li>
+      </ul>
+
+      <small>La etiqueta small se la usa para dar contenido adicional no tan importante como el principal. Anotaciones menores</small>
+
+      <p>Texto <s>tachado</s>.</p> <!-- texto tachado-->
+      <p>A<sup>2</sup> <-- superíndice</p> <!-- superíndice-->
+      <p>A<sub>2</sub> <-- subíndice</p> <!-- subíndice-->
+      
+      <P>Podemos escribir comentarios usando < ! - - aquí el comentario - - ></P>
+      <p>En VSC <strong>ctrl + k + c</strong> y <strong>ctrl + k + u</strong> para poner y quitar comentarios.</p>
+    </section>
+
+    <!-- 2 Atributos -->
+    <section>
+      <!-- Atributos -->
+      <h2 id="main">2.- Atributos</h2>
+      <p>Atributos <strong>globales</strong>: que se pueden usar en todas las etiquetas html como: class, id</p>
+      <p>Atributos <strong>específicos</strong>: son propios de ciertas etiquetas como: src, alt</p>
+
+      <img 
+        src="./img/atributos.png" 
+        alt="descripción del contenido de la imagen" 
+        title="foto de ejemplo"
+        class="moon"
+      >
+
+      <p>Atributos <strong>booleanos</strong>: solo basta con escribirlos en la etiqueta, si lo ponemos funcionan como true, por ejemplo el atributo hidden</p>
+    </section>
+
+    <!-- 3.- Anchor -->
+    <section>
+      <h2>3.- Anchor</h2>
+      <p>Se utilizan para insertar un enlace en un documento. Permiten la navegación interna en tu documento y externa a otras páginas.</p>
+
+      <h3>- Navegación interna:</h3>
+      <img src="./img/anchor interno.png" alt="anchor interno">
+      
+      <h3>- Navegación externa:</h3>
+      <img src="./img/anchor externo.png" alt="">
+      <a 
+        href="https://www.twitch.tv/sylvee"
+        target="_blank"
+        rel="noreferrer"
+      >Sylvee</a>
+      <!--
+        target="_blank" -> abre el enlace en otra pestaña
+        rel="noreferrer" -> impide dar información adicional del usuario
+      -->
+
+      <h3>- Anchor con protocolos especiales</h3>
+      <img src="./img/anchor protocolos.webp" width="500">
+    </section>
+
+    <!-- 4.- Listas -->
+    <!-- <ul> <ol> <li> -->
+    <section>
+      <h2>4.- Listas</h2>
+
+      <ul type="square">
+        <li>item</li> <!-- ● item -->
+        <li>item</li> <!-- ○ item -->
+        <li>item</li> <!-- ■ item -->
+      </ul>
+
+      <ul>
+        <li >Lista desordenada con la etiqueta ul para envolver todos los items</li>
+        <li type="circle">Con la etiqueta li, listamos cada item</li>
+        <li type="square">Con la etiqueta li, listamos cada item</li>
+      </ul>
+      
+      <ol>
+        <li>Lista ordenadas con la etiqueta ol</li>
+        <li>Con la etiqueta li, listamos cada item</li>
+        <li>Con la etiqueta li, listamos cada item</li>
+      </ol>
+
+      <!-- Atributos de la etiqueta ol -->
+      <ol type="1" reversed start="7">
+        <li>con el atributo type podemos indicar si es numeral o con letras</li>
+        <li>Con atributo reversed podemos invertir el orden</li>
+        <li>Con atributo start podemos indicar el valor de inicio</li>
+        <li value="10">item 10</li>
+      </ol>
+    </section>
+
+    <!-- 5.- Multimedia -->
+    <section>
+      <h2>5.- Multimedia </h2>
+      <section class="imagenes">
+        <H3>- Imágenes</H3>
+        <img 
+        loading="lazy"
+        src="./img/estructura html.webp" alt="description" 
+        width="400"
+        >
+        <!-- loading="lazy": carga las imágenes mientras se scrollea la página, se recomienda usarla solo en las imágenes que estan de la mitad para abajo -->
+        <!--  
+        style="width: 100%; aspect-ratio: 1056/283;"
+        Podemos usar este atributo en las etiquetas img para que las imágenes sean responsible
+        -->
+        <p>Recuerda que podemos usar el servicio de la nube Cloudinary para almacenar imágenes.</p>
+
+        <H3>- Imágenes descargables</H3>
+        <a href="#" download>
+          <img src="./img/moon.webp" width="200">
+        </a> <!-- download fuerza a descargar la imagen. Solo funciona con los archivos de nuestro servidor -->
+      </section>
+
+      <section class="video">
+        <H3>- Videos</H3>
+        <video controls loop autoplay muted src="url-video"></video>
+      </section>
+
+      <section class="audio">
+        <H3>- Audios</H3>
+        <audio controls loop autoplay muted src="url-video"></audio>
+      </section>
+    </section>
+
+    <!-- 6.- HTML semántico -->
+    <!-- <aside> <nav> <header> <footer> <section> <article> -->
+    <section>
+         <h2>6.- HTML Semántico</h2>
+         <p>Es el correcto uso de las diferentes etiquetas html para la descripción del contenido la página.</p>
+         
+         <p>Ejemplo de HTML semántico:</p>
+         
+         <aside> <!-- contenido que está indirectamente relacionado con el contenido principal -->
+           <header> <!-- seccíon para envolver el título de la sección -->
+             <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol> <!-- uso de listas -->
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </aside>
+          
+          <section> <!-- representa una sección genérica de un documento -->
+            <article> <!-- información propia contenida que puede extraerse a otra parte de la página -->
+              <header>
+                <h3>Sitio Corporativo</h3>
+              </header>
+              <p>Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.</p>
+              <footer>
+                <small>Tecnologías usadas: JavaScript, React</small> <!-- sirve para dar contenido adicional no tan importante como el principal -->
+              </footer>
+            </article>
+          </section>
+          
+          <p><strong>Importante:</strong> La etiqueta <strong>div</strong> y <strong>span</strong> solo la usamos cuando queremos agrupar elementos cuando no hay un significado semántico.</p>
+          
+          <p> La etiqueta <strong>span</strong> es la versión en línea de una etiqueta <strong>div</strong>. Mientras que esta última se utiliza para agrupar otras etiquetas variadas, agruparlas y organizarlas de forma semántica o con cierto sentido, la etiqueta <strong>span</strong>  permite hacer lo mismo con fragmentos de texto en línea, sin cambiar el flujo del mismo. </p>
+    </section>
+        
+    <!-- 7.- Elementos de reemplazo -->
+    <section>
+      <h2>7.- Elementos reemplazables</h2>
+      <p>
+        Algunos objetos que normalmente funcionan como objetos de reemplazo. Se los pueden identificar porque no tienen etiquetas de cierre como:<strong> img, object, video</strong> o elementos de formulario como <strong>textarea, input</strong>.
+      </p>
+    </section>
+        
+
+    <!-- Formularios -->
+    <!-- <form> <fieldset> <legend> <input> <select> <datalist> <option> -->
+    <h2>8.- Formularios</h2>
+    <p>Son las etiquetas más usadas, permite que el usuario enviar datos al servidor.</p>
+    <p><strong>Importante:</strong> Usar en los input el type correcto para cada tipo de información: text, number, tel, email, date-time...</p>
+
+    <section>
+
+      <h3>Formulario de contacto</h3>
+
+      <form method="post" action="/">
+        <fieldset> <!-- permite agrupar los diferentes inputs del formulario -->
+          <legend>Información personal</legend> <!-- le pone nombre al fieldset -->
+          <div>
+            <label>Nombre:
+              <input 
+                type="text" 
+                name="name"
+                placeholder="Ana De Armas"
+                required
+              > <!-- required: información obligatoria -->
+            </label>
+          </div>
+
+          <!-- otra forma de vincular el label con el input es ponerle en el id del input el mismo "valor" que tiene el for del label -->
+          <!-- ¿Cúal debemos usar? Las dos opciones son correctas, si tenemos los input al lado del label podemos usar la opción anterior -->
+          <div>
+            <label for="email">Email:</label>
+            <input 
+              type="email" 
+              name="email"
+              id="email"
+              placeholder="ana@gmail.com"
+              required
+            >
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Información adicional</legend>
+          <div>
+            <label>Teléfono:
+              <input 
+                type="tel" 
+                name="telefono"
+                placeholder="098373633"
+                required
+              >
+            </label>
+          </div>
+
+          <div>
+            <label>Fecha N:
+              <input 
+                type="datetime-local" 
+                name="born"
+              >
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros</legend>
+          <div>
+            <label for="why">¿Por qué quieres contactar?</label>
+            <select name="why" id="why">
+              <option value="1">Trabajo</option>
+              <option value="2"  selected>Duda</option> <!-- el atributo select nos presenta una opción inicial por defecto -->
+              <option value="3">Reclamo</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="terms">¿Aceptas los términos?</label>
+            <input type="checkbox" name="terms" id="terms" required>
+          </div>
+
+          <div>
+            <label>
+              ¿Con qué lenguajes quieres que te ayude?
+              <input list="languages" name="languages">
+            </label>
+            <datalist id="languages">
+              <option value="JavaScript"></option>
+              <option value="Java"></option>
+              <option value="C#"></option>
+            </datalist> 
+          </div>
+
+          <div>
+            <label for="comen">Déjamos tu comentario:</label>
+            <div> <!-- lo envolvemos en un div para tener el salto de línea -->
+              <textarea 
+                name="comen" 
+                id="comen" 
+                cols="25" 
+                rows="5" 
+                placeholder="Queremos saber tu experiencia en el completado del formulario."
+              >
+              </textarea>
+            </div>
+          </div>
+          
+          <div>
+            Uso del type=range con salida dinámica:
+            <input type="range" value="5.0" onInput="this.nextElementSibling.value = this.value">
+            <output>5.0</output>
+          </div>
+        </fieldset>
+
+        <!-- <input type="submit" value="Enviar contacto"> -->
+        <!-- Los botones que estan dentro de un formulario son siempre de type="submit" -->
+        <button>Enviar contacto</button>
+      </form>
+
+    </section>
+
+
+    <!-- Opciones desplegables -->
+    <!-- <details> <summary> -->
+    <h2>9.- Details y summary</h2>
+    <section>
+      <details name="ask"> <!-- el mismo atributo name en todos los details permite cerrar el dialog automáticamente -->
+        <summary>¿Qué estudios tienes?</summary>
+        <p>Estudié en la universidad pública de mi ciudad.</p>
+      </details>
+
+      <details name="ask">
+        <summary>¿Cuáles son tu hobbies?</summary>
+        <p>Me gusta el deporte y dibujar.</p>
+      </details>
+
+      <details open name="ask"> <!-- atributo que permite tener abierto por defecto la opción -->
+        <summary>¿Cuál es tu lenguaje favorito?</summary>
+        <p>Me gusta mucho JavaScript porque fue el primero que aprendí.</p>
+      </details>
+    </section>
+
+
+    <h2>10.- Iframe</h2>
+    <p>Son etiquetas que permiten insertar otra página dentro de tu página, su uso más popular es para agregar videos.</p>
+
+    <!-- <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=iN8RrjoCXrG42y7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
+    <!-- Dialog -->
+    <h2>11.- Dialog</h2>
+    <section>
+
+      <dialog id="modal">
+        <h1>¿Sabías que puedes abrir una modal así?</h1>
+        <p>¡Y es totalmente nativo!</p>
+        <button id="cerrar">Cerrar modal</button>
+      </dialog>
+
+      <button id="abrir">Ver más información</button>
+    
+      <script>
+        window.abrir.addEventListener('click', () => {
+          window.modal.showModal()
+        })
+        window.cerrar.addEventListener('click', () => {
+          window.modal.close()
+        })
+      </script>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <h1>Footer</h1>
+    Copyright © 2025 - El resumen de HTML más bello del mundo.
+    <a href="#header">Volver al header</a>
+  </footer>
+
+</body>
+</html>

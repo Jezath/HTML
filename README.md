@@ -828,6 +828,8 @@ window.cerrar.addEventListener('click', () => {
 })
 ```
 
+[Volver arriba](#contenido)
+
 ---
 
 Hasta aquí la información sobre **HTML**. A medida que vaya aprendiendo nuevas cosas iré actualizando este repositorio.

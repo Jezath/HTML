@@ -8,7 +8,7 @@
 - [Atributos](#atributos)
 - [Texto](#texto)
 - [Anchor](#anchor)
-- [Agrupación](#agrupación)
+- [Agrupación](#agrupacion)
   - Listas
   - Figure
   - Div
@@ -18,7 +18,7 @@
   - Picture
   - Videos
   - Audios
-- [HTML semántico](#html-semántico)
+- [HTML semántico](#html-semantico)
 - [Elementos reemplazables](#elementos-reemplazables)
 - [Formularios](#formularios)
 - [Details y Summary](#details-y-summary)
@@ -184,7 +184,7 @@ Otros atributos que podemos usar en la etiqueta `<a>` son:
 
 ---
 
-## Agrupación
+## Agrupacion
 
 Mejor conocidas como etiquetas de contenido son las que agrupan el contenido que hay en su interior. Entre ellas tenemos: `<ul>` `<ol>` `<div>` `<figure>`.
 
@@ -467,7 +467,7 @@ La etiqueta de `<audio>` utiliza los mismos atributos que la de video.
 
 ---
 
-## HTML Semántico
+## HTML Semantico
 
 Es el uso correcto de las diferentes etiquetas html para la descripción del contenido la página.
 

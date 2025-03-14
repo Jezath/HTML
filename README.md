@@ -4,7 +4,7 @@
 
 ## Contenido
 
-- [Estructura básica](#estructura-básica-html)
+- [Estructura básica html](#estructura-basica-html)
 - [Atributos](#atributos)
 - [Texto](#texto)
 - [Anchor](#anchor)
@@ -26,7 +26,7 @@
 
 ---
 
-## Estructura básica html
+## Estructura basica html
 
 - `<head>`: Contiene información técnica del navegador como: metadatos, archivos que se cargan e información de la página. Este contenido no es visible para los usuarios. *Más información sobre los metadatos en el archivo HTML.*
 
@@ -61,7 +61,7 @@ Los atributos generalmente van asociados a un valor determinado. Este par *atrib
 - **Atributos globales:** Se pueden usar en todas las etiquetas html como: `class, id`.
 
 ```html
-<strong id="dato" class="clas" lang="es">Texto</strong>
+<strong id="dato" class="clas">Texto</strong>
 ```
 
 - **Atributos específicos:** Son propios de ciertas etiquetas como: `src, alt`.
@@ -534,7 +534,7 @@ Estas dos etiquetas van juntas y su propósito es darle un agrupamiento visual a
 
 ### Input
 
-Los `<input>` los elementos básicos de un formulario ya que son los que nos permiten recuperar la información del usuario de diferentes formas.
+Los `<input>` son elementos básicos de un formulario ya que son los que nos permiten recuperar la información del usuario de diferentes formas.
 
 Atributos de la etiqueta `<input>`:
 
@@ -549,8 +549,6 @@ Atributos de la etiqueta `<input>`:
 | `autocomplete`   |	Activa `on` o desactiva `off` el autocompletado para este campo. Activado por defecto. |
 | `autofocus`   |	Establece el foco (coloca el cursor) en este campo al cargar la página. |
 | `required`   |	Indica que la información de dicho input es obligatoria. |
-
-### Tipos de input
 
 Tipos de `<input>` por su `type`:
 

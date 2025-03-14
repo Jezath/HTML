@@ -122,7 +122,7 @@ Estas etiquetas dan significado o contexto a un fragmento de texto. Funciona com
 
 Estas estiquetas permiten agrupar otras etiquetas de texto.
 
-- `<h1>`: Permite resaltar el texto en forma de **títulos**, su tamaño de mayor a menor va desde la etiqueta `h1` hasta la `h6`.
+- `<h1>`: Permite resaltar el texto en forma de **títulos**, su tamaño de mayor a menor va desde la etiqueta `<h1>` hasta la `<h6>`.
 
 - `<p>`: Define una parte que debe mostrarse como un **párrafo**.
 
@@ -153,7 +153,7 @@ Los anchor o anclas `<a>` en una URL no son más que un fragmento de texto prece
 <h2 id='main'>Principal</h2> <!-- destino del enlace-->
 ```
 
-- `<href>`: Es el atributo con el que se indica la dirección URL a la página, documento o recursos que se quiere enlazar.
+- `href`: Es el atributo con el que se indica la dirección URL a la página, documento o recursos que se quiere enlazar.
 
 ### Anchor para navegación externa
 
@@ -186,13 +186,13 @@ Otros atributos que podemos usar en la etiqueta `<a>` son:
 
 ## Agrupacion
 
-Mejor conocidas como etiquetas de contenido son las que agrupan el contenido que hay en su interior. Entre ellas tenemos: `<ul>` `<ol>` `<div>` `<figure>`.
+Mejor conocidas como etiquetas de contenedoras, son las que agrupan el contenido que hay en su interior. Entre ellas tenemos: `<ul>` `<ol>` `<div>` `<figure>`.
 
 ### Listas:
 
 ### Listas ordenadas
 
-Usamos la etiqueta `<ol>` para crear una lista ordenada númerica o alfabéctica y dentro de ella usamos la etiqueta `li` para cada elemento de la lista.
+Usamos la etiqueta `<ol>` para crear una lista ordenada númerica o alfabéctica y dentro de ella usamos la etiqueta `<li>` para cada elemento de la lista.
 
 ```html
 <ol>
@@ -241,7 +241,7 @@ Usamos la etiqueta `<ul>` para crear una lista desordenada establecida por viñe
 </ul>
 ```
 
-> **Nota:** Podemos usar el atributo `type="circle|square"` tanto en la etiqueta `ul` para todos los elementos de la lista, como en la etiqueta `li` para los elementos individuales de la lista.
+> **Nota:** Podemos usar el atributo `type="circle|square"` tanto en la etiqueta `<ul>` para todos los elementos de la lista, como en la etiqueta `<li>` para los elementos individuales de la lista.
 
 ### Figure y Figcaption
 
@@ -256,7 +256,7 @@ Usamos la etiqueta `<ul>` para crear una lista desordenada establecida por viñe
 
 ### Div
 
-La etiqueta `div` la usamos cuando queremos agrupar elementos cuando no hay un significado semántico. Funciona como una etiqueta de bloque es decir, da salto de linea.
+La etiqueta `<div>` la usamos cuando queremos agrupar elementos cuando no hay un significado semántico. Funciona como una etiqueta de bloque es decir, da salto de linea.
 
 Se la utilizan con un atributo `id` o `class` para referenciarla más facilmente.
 
@@ -272,7 +272,7 @@ Se la utilizan con un atributo `id` o `class` para referenciarla más facilmente
 </div>
 ```
 
-> **Nota importante:** La etiqueta `span` es la versión en línea de una etiqueta `div`. Mientras que esta última se utiliza para agrupar otras etiquetas variadas, agruparlas y organizarlas de forma semántica o con cierto sentido, la etiqueta `span` permite hacer lo mismo con fragmentos de texto en línea, sin cambiar el flujo del mismo.
+> **Nota:** La etiqueta `<span>` es la versión en línea de una etiqueta `<div>`. Mientras que esta última se utiliza para agrupar otras etiquetas variadas y organizarlas de forma semántica o con cierto sentido, la etiqueta `<span>` permite hacer lo mismo con fragmentos de texto en línea, sin cambiar el flujo del mismo.
 
 ---
 
@@ -346,7 +346,7 @@ Para cargar imágenes usamos la etiqueta `<i>` la cual cuenta con ciertos atribu
 
 Para hacer que una imágen ajuste su tamaño automáticamente con el tamaño de la página usamos el siguiente atributo.
 
-- `style="width: 100%; aspect-ratio: valor/valor;"`: Ver el aspect-ratio de cada imágen.
+- `style="width: 100%; aspect-ratio: valor/valor;"`
 
 ```html
 <img 
@@ -356,7 +356,7 @@ Para hacer que una imágen ajuste su tamaño automáticamente con el tamaño de 
 />
 ```
 
-> **Nota:** No usamos los atributos de `width` y `height`.
+> **Nota:** No usamos los atributos de `width` y `height`. Ver el `aspect-ratio` de cada imágen en las herramientas de desarrollo del navegador. 
 
 ### Imágen como enlace
 
@@ -384,7 +384,7 @@ Para hacer una imagen descargable la tenemos que envolver con una etiqueta `<a>`
 
 ### Picture
 
-La etiqueta `<picture>` es una etiqueta contenedora la cual nos dá la posibilidad de establecer diferentes imágenes alternativas con la eitquet `<source>` las cuales se aplicarán dependiendo del tamaño que requiramos.
+La etiqueta `<picture>` es una etiqueta contenedora la cual nos dá la posibilidad de establecer diferentes imágenes alternativas con las etiquetas `<source>` las cuales se aplicarán dependiendo del tamaño que requiramos.
 
 ```html
 <picture>
@@ -488,7 +488,7 @@ Algunos objetos que normalmente funcionan como objetos de reemplazo. Se los pued
 
 ## Formularios
 
-Los formularios son unos de los recursos más utilizadas en todo el internet ya que le permite al usuario enviar datos al servidor.
+Los formularios son unos de los recursos más utilizados en todo el internet ya que le permite al usuario enviar datos al servidor.
 
 ### Form
 
@@ -496,7 +496,7 @@ La etiqueta `<form>` define un formulario HTML para la entrada del usuario. Es l
 
 Dentro de esta etiqueta podemos definir ciertos atributos especiales para conexión al sevidor:
 
-- `method="post"`: Método HTTP de envío. GET a través de URL, POST para envío extenso de información..
+- `method="post/get"`: Método HTTP de envío. GET a través de URL, POST para envío extenso de información..
 - `action="/"`: Dirección URL del backend al cuál se enviará la información obtenida en el formulario.
 - `name=""`: Nombre del formulario. Útil para identificar el formulario y procesar posteriormente.
 
@@ -517,7 +517,7 @@ Dentro de esta etiqueta podemos definir ciertos atributos especiales para conexi
 Estas dos etiquetas van juntas y su propósito es darle un agrupamiento visual a los inputs.
 
 - `<fieldset>`: Permite agrupar inputs que comparte el mismo propósito en una especie de caja.
-- `<legend>`: Permite ponerle nombre al fieldset.
+- `<legend>`: Le pone nombre al fieldset.
 
 ```html
 <form method="post" action="/">
@@ -655,7 +655,7 @@ La etiqueta `<label>` define un control para el formulario HTML. Esta etiqueta e
 
 ### Select
 
-`<select>` Es una etiqueta contenedora que permite crear una lista desplegable de elementos, estos elementos deben ir en la etiqueta `<option>`
+`<select>` Es una etiqueta contenedora que permite crear una lista desplegable de elementos, estos elementos deben ir en la etiqueta `<option>`.
 
 ```html
 <form method="post" action="/send/">
@@ -669,7 +669,7 @@ La etiqueta `<label>` define un control para el formulario HTML. Esta etiqueta e
 </form>
 ```
 
-Podemos crear grupos de opciones con la etiqueta ``.
+Podemos crear grupos de opciones con la etiqueta.
 
 ```html
 <form method="post" action="/send/">
@@ -691,7 +691,7 @@ Podemos crear grupos de opciones con la etiqueta ``.
 
 Es una etiqueta potenciada de select, permite personalizar una lista de datos.
 
-La etiqueta `<datalist>` debe indicarse con un atributo id para identificarse. En su interior, incluiremos varias etiquetas `<option>` para añadir opciones, al igual que lo hacemos en una etiqueta `<select>`.
+La etiqueta `<datalist>` debe indicarse con un atributo `id` para identificarse. En su interior, incluiremos varias etiquetas `<option>` para añadir opciones, al igual que lo hacemos en una etiqueta `<select>`.
 
 Utilicemos la etiqueta `<input type="text">` para permitir al usuario introducir texto pero aumentándola con las capacidades de `<datalist>`. Utilizaremos el atributo list del `<input>` para conectar con el id del `<datalist>`:
 
@@ -763,7 +763,7 @@ Usamos el atributo `disabled` para desactivar un botón.
 
 ```html
 <button>Botón activado</button>
-<button disabled>Botón desactivado</button> <!-- el botón se ve transparente y no se puede clickear-->
+<button disabled>Botón desactivado</button> <!-- el botón se muestra transparente y no se puede clicar-->
 ```
 
 ---

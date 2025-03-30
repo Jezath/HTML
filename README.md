@@ -826,6 +826,22 @@ window.cerrar.addEventListener('click', () => {
 })
 ```
 
+---
+
+### Atajos con VS Code
+
+Podemos usar la siguiente abreviación para insertar HTML más rápido.
+
+```html
+p{title $}*3 <!-- crea 3 etiquetas <p>, el $ le dá valores numéricos -->
+
+<p>title 1</p>
+<p>title 2</p>
+<p>title 3</p>
+```
+
+Si quieres saber sobre atajos revisar el siguiente [link](https://www.youtube.com/@4_programming/shorts).
+
 [Volver arriba](#contenido)
 
 ---

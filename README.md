@@ -167,7 +167,7 @@ Para esto usamos las rutas absolutas acompañadas de ciertos atributos para aume
 >Sylvee</a>
 ```
 - `target="_blank"`: Abre el enlace en otra pestaña.
-- `rel="noreferrer"`: Impide dar información adicional del usuario.
+- `rel="noopener noreferrer"`: Impide dar información adicional del usuario.
 
 Otros atributos que podemos usar en la etiqueta `<a>` son:
 
@@ -839,8 +839,6 @@ p{title $}*3 <!-- crea 3 etiquetas <p>, el $ le dá valores numéricos -->
 <p>title 2</p>
 <p>title 3</p>
 ```
-
-Si quieres saber sobre atajos revisar el siguiente [link](https://www.youtube.com/@4_programming/shorts).
 
 [Volver arriba](#contenido)
 

@@ -478,6 +478,25 @@ Es el uso correcto de las diferentes etiquetas html para la descripción del con
 
 ![Semántica](https://static.semrush.com/blog/uploads/media/0a/0f/0a0fd07d0a6ee7a7f893b0e21379c0ae/ES-Semantic-Search-Non-Semantic.png)
 
+
+Otras etiquetas semánticas que se pueden usar en HTML son las de representación de código:
+
+1. `<code>` (código en línea o en bloque): Se usa para marcar código, pero no respeta saltos de línea ni espacios por sí sola. Es ideal para código dentro de un párrafo.
+
+```html
+<p>Usa <code>console.log("Hola mundo");</code> para imprimir en consola.</p>
+```
+
+2. `<pre>` (preformateado): Muestra el contenido exactamente como lo escribes: con espacios, tabulaciones y saltos de línea. Pero no da formato de código por sí sola.
+
+```html
+<pre>
+  Esto se ve
+  exactamente
+  como lo escribes.
+</pre>
+```
+
 ---
 
 ## Elementos reemplazables
